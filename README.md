@@ -1,3 +1,9 @@
+## Status
+
+- Aktuellstes BIOS: `R81 Ver.01.30.00 01/15/2025`
+- Linux-Distribution: Ubuntu 24.04.2 LTS
+- Kernel: `Linux manul 6.11.0-24-generic #24~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Mar 25 20:14:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux`
+
 ## Erfolgreicher Boot (sehr selten):
 
 Ausgabe von `journalctl -b | grep amdgpu`:
@@ -410,14 +416,6 @@ None-1 connected primary 1920x1080+0+0 (0x41) normal (normal left inverted right
         h: width  1920 start 1920 end 1920 total 1920 skew    0 clock  64.80KHz
         v: height 1080 start 1080 end 1080 total 1080           clock  60.00Hz
 ```
-
-## Status
-
-- Aktuellstes BIOS: `R81 Ver.01.30.00 01/15/2025`
-- Linux-Distribution:
-- Kernel:
-
-## Tipps
 
 Ausgabe von `lspci -vv -s 04:00.0`:
 
