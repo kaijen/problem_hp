@@ -1,7 +1,7 @@
 ## Status
 
 - Aktuellstes BIOS: `R81 Ver.01.30.00 01/15/2025`
-- Linux-Distribution: Ubuntu 24.04.2 LTS
+- Linux-Distribution: `Ubuntu 24.04.2 LTS`
 - Kernel: `Linux manul 6.11.0-24-generic #24~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Mar 25 20:14:34 UTC 2 x86_64 x86_64 x86_64 GNU/Linux`
 
 ## Erfolgreicher Boot (sehr selten):
