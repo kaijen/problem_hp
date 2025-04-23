@@ -1,0 +1,28 @@
+--- D:\TEMP\github-kaijen\problem_hp\lspci-success.txt	Wed Apr 23 16:59:10 2025
++++ D:\TEMP\github-kaijen\problem_hp\lspci-error.txt	Wed Apr 23 16:58:54 2025
+@@ -1,9 +1,8 @@
+ 04:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Picasso/Raven 2 [Radeon Vega Series / Radeon Vega Mobile Series] (rev d3) (prog-if 00 [VGA controller])
+         DeviceName: Onboard IGD
+         Subsystem: Hewlett-Packard Company Picasso/Raven 2 [Radeon Vega Series / Radeon Vega Mobile Series]
+-        Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
++        Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+         Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort+ <TAbort- <MAbort- >SERR- <PERR- INTx-
+-        Latency: 0
+         Interrupt: pin A routed to IRQ 44
+         IOMMU group: 11
+         Region 0: Memory at e0000000 (64-bit, prefetchable) [size=256M]
+@@ -44,7 +43,7 @@
+                          Retimer- 2Retimers- CrosslinkRes: unsupported
+         Capabilities: [a0] MSI: Enable- Count=1/4 Maskable- 64bit+
+                 Address: 0000000000000000  Data: 0000
+-        Capabilities: [c0] MSI-X: Enable+ Count=3 Masked-
++        Capabilities: [c0] MSI-X: Enable- Count=3 Masked-
+                 Vector table: BAR=5 offset=00042000
+                 PBA: BAR=5 offset=00043000
+         Capabilities: [100 v1] Vendor Specific Information: ID=0001 Rev=1 Len=010 <?>
+@@ -70,5 +69,4 @@
+         Capabilities: [320 v1] Latency Tolerance Reporting
+                 Max snoop latency: 0ns
+                 Max no snoop latency: 0ns
+-        Kernel driver in use: amdgpu
+         Kernel modules: amdgpu
