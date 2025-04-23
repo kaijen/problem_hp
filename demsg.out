@@ -1,0 +1,402 @@
+[    0.028350] [mem 0xbc000000-0xf7ffffff] available for PCI devices
+[    0.239255] calling  pci_realloc_setup_params+0x0/0x90 @ 1
+[    0.239258] initcall pci_realloc_setup_params+0x0/0x90 returned 0 after 0 usecs
+[    0.241320] calling  pcibus_class_init+0x0/0x20 @ 1
+[    0.241326] initcall pcibus_class_init+0x0/0x20 returned 0 after 0 usecs
+[    0.241328] calling  pci_driver_init+0x0/0x40 @ 1
+[    0.241345] initcall pci_driver_init+0x0/0x40 returned 0 after 0 usecs
+[    0.241666] calling  acpi_pci_init+0x0/0x70 @ 1
+[    0.241666] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.241666] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.241666] initcall acpi_pci_init+0x0/0x70 returned 0 after 0 usecs
+[    0.241666] calling  register_xen_pci_notifier+0x0/0x50 @ 1
+[    0.241666] initcall register_xen_pci_notifier+0x0/0x50 returned 0 after 0 usecs
+[    0.241713] calling  pci_arch_init+0x0/0x90 @ 1
+[    0.241735] PCI: ECAM [mem 0xf8000000-0xfbffffff] (base 0xf8000000) for domain 0000 [bus 00-3f]
+[    0.241753] PCI: Using configuration type 1 for base access
+[    0.241759] initcall pci_arch_init+0x0/0x90 returned 0 after 0 usecs
+[    0.243636] calling  pci_slot_init+0x0/0x60 @ 1
+[    0.243645] initcall pci_slot_init+0x0/0x60 returned 0 after 0 usecs
+[    0.256844] ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.LPC0.EC0], AE_NOT_FOUND (20240322/dswload2-162)
+[    0.295632] ACPI: \_SB_.PCI0.LPCB.EC0_: Boot DSDT EC used to handle transactions
+[    0.297273] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.297280] PCI: Ignoring E820 reservations for host bridge windows
+[    0.299001] ACPI: \_SB_.PCI0.GPP1.PXP_: New power resource
+[    0.299497] ACPI: \_SB_.PCI0.GPP3.NCRD.WLRT: New power resource
+[    0.302865] ACPI: \_SB_.PCI0.BUSA.HDEF.APPR: New power resource
+[    0.309432] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.309726] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME AER PCIeCapability]
+[    0.310147] PCI host bridge to bus 0000:00
+[    0.310155] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.310160] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.310166] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.310173] pci_bus 0000:00: root bus resource [mem 0x000c0000-0x000cbfff window]
+[    0.310179] pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000effff window]
+[    0.310184] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xf7ffffff window]
+[    0.310190] pci_bus 0000:00: root bus resource [mem 0xfc000000-0xfeafffff window]
+[    0.310196] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.310225] pci 0000:00:00.0: calling  quirk_mmio_always_on+0x0/0x20 @ 1
+[    0.310238] pci 0000:00:00.0: quirk_mmio_always_on+0x0/0x20 took 0 usecs
+[    0.310247] pci 0000:00:00.0: [1022:15d0] type 00 class 0x060000 conventional PCI endpoint
+[    0.310396] pci 0000:00:00.2: [1022:15d1] type 00 class 0x080600 conventional PCI endpoint
+[    0.310544] pci 0000:00:01.0: calling  quirk_mmio_always_on+0x0/0x20 @ 1
+[    0.310553] pci 0000:00:01.0: quirk_mmio_always_on+0x0/0x20 took 0 usecs
+[    0.310561] pci 0000:00:01.0: [1022:1452] type 00 class 0x060000 conventional PCI endpoint
+[    0.310684] pci 0000:00:01.3: [1022:15d3] type 01 class 0x060400 PCIe Root Port
+[    0.310715] pci 0000:00:01.3: PCI bridge to [bus 01]
+[    0.310726] pci 0000:00:01.3:   bridge window [io  0x3000-0x3fff]
+[    0.310733] pci 0000:00:01.3:   bridge window [mem 0xf0900000-0xf09fffff]
+[    0.310759] pci 0000:00:01.3: enabling Extended Tags
+[    0.310842] pci 0000:00:01.3: PME# supported from D0 D3hot D3cold
+[    0.311053] pci 0000:00:01.4: [1022:15d3] type 01 class 0x060400 PCIe Root Port
+[    0.311085] pci 0000:00:01.4: PCI bridge to [bus 02]
+[    0.311097] pci 0000:00:01.4:   bridge window [mem 0xf0800000-0xf08fffff]
+[    0.311123] pci 0000:00:01.4: enabling Extended Tags
+[    0.311205] pci 0000:00:01.4: PME# supported from D0 D3hot D3cold
+[    0.311395] pci 0000:00:01.7: [1022:15d3] type 01 class 0x060400 PCIe Root Port
+[    0.311431] pci 0000:00:01.7: PCI bridge to [bus 03]
+[    0.311443] pci 0000:00:01.7:   bridge window [mem 0xf0700000-0xf07fffff]
+[    0.311469] pci 0000:00:01.7: enabling Extended Tags
+[    0.311550] pci 0000:00:01.7: PME# supported from D0 D3hot D3cold
+[    0.311737] pci 0000:00:08.0: calling  quirk_mmio_always_on+0x0/0x20 @ 1
+[    0.311746] pci 0000:00:08.0: quirk_mmio_always_on+0x0/0x20 took 0 usecs
+[    0.311754] pci 0000:00:08.0: [1022:1452] type 00 class 0x060000 conventional PCI endpoint
+[    0.311873] pci 0000:00:08.1: [1022:15db] type 01 class 0x060400 PCIe Root Port
+[    0.311905] pci 0000:00:08.1: PCI bridge to [bus 04]
+[    0.311914] pci 0000:00:08.1:   bridge window [io  0x2000-0x2fff]
+[    0.311921] pci 0000:00:08.1:   bridge window [mem 0xf0200000-0xf06fffff]
+[    0.311934] pci 0000:00:08.1:   bridge window [mem 0xe0000000-0xf01fffff 64bit pref]
+[    0.311950] pci 0000:00:08.1: enabling Extended Tags
+[    0.312015] pci 0000:00:08.1: PME# supported from D0 D3hot D3cold
+[    0.312240] pci 0000:00:14.0: [1022:790b] type 00 class 0x0c0500 conventional PCI endpoint
+[    0.312407] pci 0000:00:14.3: [1022:790e] type 00 class 0x060100 conventional PCI endpoint
+[    0.312602] pci 0000:00:18.0: calling  quirk_mmio_always_on+0x0/0x20 @ 1
+[    0.312611] pci 0000:00:18.0: quirk_mmio_always_on+0x0/0x20 took 0 usecs
+[    0.312619] pci 0000:00:18.0: [1022:15e8] type 00 class 0x060000 conventional PCI endpoint
+[    0.312691] pci 0000:00:18.1: calling  quirk_mmio_always_on+0x0/0x20 @ 1
+[    0.312699] pci 0000:00:18.1: quirk_mmio_always_on+0x0/0x20 took 0 usecs
+[    0.312706] pci 0000:00:18.1: [1022:15e9] type 00 class 0x060000 conventional PCI endpoint
+[    0.312777] pci 0000:00:18.2: calling  quirk_mmio_always_on+0x0/0x20 @ 1
+[    0.312785] pci 0000:00:18.2: quirk_mmio_always_on+0x0/0x20 took 0 usecs
+[    0.312792] pci 0000:00:18.2: [1022:15ea] type 00 class 0x060000 conventional PCI endpoint
+[    0.312864] pci 0000:00:18.3: calling  quirk_mmio_always_on+0x0/0x20 @ 1
+[    0.312872] pci 0000:00:18.3: quirk_mmio_always_on+0x0/0x20 took 0 usecs
+[    0.312880] pci 0000:00:18.3: [1022:15eb] type 00 class 0x060000 conventional PCI endpoint
+[    0.312950] pci 0000:00:18.4: calling  quirk_mmio_always_on+0x0/0x20 @ 1
+[    0.312958] pci 0000:00:18.4: quirk_mmio_always_on+0x0/0x20 took 0 usecs
+[    0.312965] pci 0000:00:18.4: [1022:15ec] type 00 class 0x060000 conventional PCI endpoint
+[    0.313035] pci 0000:00:18.5: calling  quirk_mmio_always_on+0x0/0x20 @ 1
+[    0.313043] pci 0000:00:18.5: quirk_mmio_always_on+0x0/0x20 took 0 usecs
+[    0.313050] pci 0000:00:18.5: [1022:15ed] type 00 class 0x060000 conventional PCI endpoint
+[    0.313128] pci 0000:00:18.6: calling  quirk_mmio_always_on+0x0/0x20 @ 1
+[    0.313135] pci 0000:00:18.6: quirk_mmio_always_on+0x0/0x20 took 0 usecs
+[    0.313143] pci 0000:00:18.6: [1022:15ee] type 00 class 0x060000 conventional PCI endpoint
+[    0.313214] pci 0000:00:18.7: calling  quirk_mmio_always_on+0x0/0x20 @ 1
+[    0.313221] pci 0000:00:18.7: quirk_mmio_always_on+0x0/0x20 took 0 usecs
+[    0.313229] pci 0000:00:18.7: [1022:15ef] type 00 class 0x060000 conventional PCI endpoint
+[    0.313396] pci 0000:01:00.0: [10ec:8168] type 00 class 0x020000 PCIe Endpoint
+[    0.313469] pci 0000:01:00.0: BAR 0 [io  0x3300-0x33ff]
+[    0.313479] pci 0000:01:00.0: BAR 2 [mem 0xf0914000-0xf0914fff 64bit]
+[    0.313488] pci 0000:01:00.0: BAR 4 [mem 0xf0900000-0xf0903fff 64bit]
+[    0.313616] pci 0000:01:00.0: supports D1 D2
+[    0.313620] pci 0000:01:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.313882] pci 0000:01:00.1: [10ec:816a] type 00 class 0x070002 PCIe Endpoint
+[    0.313951] pci 0000:01:00.1: BAR 0 [io  0x3200-0x32ff]
+[    0.313961] pci 0000:01:00.1: BAR 2 [mem 0xf0915000-0xf0915fff 64bit]
+[    0.313969] pci 0000:01:00.1: BAR 4 [mem 0xf0904000-0xf0907fff 64bit]
+[    0.314085] pci 0000:01:00.1: supports D1 D2
+[    0.314090] pci 0000:01:00.1: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.314285] pci 0000:01:00.2: [10ec:816b] type 00 class 0x070002 PCIe Endpoint
+[    0.314353] pci 0000:01:00.2: BAR 0 [io  0x3100-0x31ff]
+[    0.314363] pci 0000:01:00.2: BAR 2 [mem 0xf0916000-0xf0916fff 64bit]
+[    0.314371] pci 0000:01:00.2: BAR 4 [mem 0xf0908000-0xf090bfff 64bit]
+[    0.314490] pci 0000:01:00.2: supports D1 D2
+[    0.314495] pci 0000:01:00.2: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.314688] pci 0000:01:00.3: [10ec:816c] type 00 class 0x0c0701 PCIe Endpoint
+[    0.314757] pci 0000:01:00.3: BAR 0 [io  0x3000-0x30ff]
+[    0.314766] pci 0000:01:00.3: BAR 2 [mem 0xf0917000-0xf0917fff 64bit]
+[    0.314774] pci 0000:01:00.3: BAR 4 [mem 0xf090c000-0xf090ffff 64bit]
+[    0.314891] pci 0000:01:00.3: supports D1 D2
+[    0.314895] pci 0000:01:00.3: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.315087] pci 0000:01:00.4: [10ec:816d] type 00 class 0x0c0320 PCIe Endpoint
+[    0.315155] pci 0000:01:00.4: BAR 0 [mem 0xf0918000-0xf0918fff]
+[    0.315165] pci 0000:01:00.4: BAR 2 [mem 0xf0910000-0xf0913fff 64bit]
+[    0.315284] pci 0000:01:00.4: PME# supported from D0 D3cold
+[    0.315544] pci 0000:00:01.3: PCI bridge to [bus 01]
+[    0.315766] pci 0000:02:00.0: [8086:2526] type 00 class 0x028000 PCIe Endpoint
+[    0.315875] pci 0000:02:00.0: BAR 0 [mem 0x00000000-0x00003fff 64bit]
+[    0.315979] pci 0000:02:00.0: calling  quirk_iommu_ipu+0x0/0xd0 @ 1
+[    0.315991] pci 0000:02:00.0: quirk_iommu_ipu+0x0/0xd0 took 0 usecs
+[    0.315998] pci 0000:02:00.0: calling  quirk_igfx_skip_te_disable+0x0/0xe0 @ 1
+[    0.316006] pci 0000:02:00.0: quirk_igfx_skip_te_disable+0x0/0xe0 took 0 usecs
+[    0.316155] pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+[    0.317131] pci 0000:00:01.4: PCI bridge to [bus 02]
+[    0.317224] pci 0000:03:00.0: [1e0f:0001] type 00 class 0x010802 PCIe Endpoint
+[    0.317282] pci 0000:03:00.0: BAR 0 [mem 0xf0700000-0xf0703fff 64bit]
+[    0.317391] pci 0000:03:00.0: PME# supported from D0 D3hot
+[    0.317481] pci 0000:03:00.0: 16.000 Gb/s available PCIe bandwidth, limited by 5.0 GT/s PCIe x4 link at 0000:00:01.7 (capable of 31.504 Gb/s with 8.0 GT/s PCIe x4 link)
+[    0.317614] pci 0000:00:01.7: PCI bridge to [bus 03]
+[    0.317760] pci 0000:04:00.0: [1002:15d8] type 00 class 0x030000 PCIe Legacy Endpoint
+[    0.317813] pci 0000:04:00.0: BAR 0 [mem 0xe0000000-0xefffffff 64bit pref]
+[    0.317821] pci 0000:04:00.0: BAR 2 [mem 0xf0000000-0xf01fffff 64bit pref]
+[    0.317827] pci 0000:04:00.0: BAR 4 [io  0x2000-0x20ff]
+[    0.317833] pci 0000:04:00.0: BAR 5 [mem 0xf0600000-0xf067ffff]
+[    0.317846] pci 0000:04:00.0: enabling Extended Tags
+[    0.317877] pci 0000:04:00.0: calling  quirk_no_pm_reset+0x0/0x30 @ 1
+[    0.317886] pci 0000:04:00.0: quirk_no_pm_reset+0x0/0x30 took 0 usecs
+[    0.317895] pci 0000:04:00.0: calling  screen_info_fixup_lfb+0x0/0x1e0 @ 1
+[    0.317905] pci 0000:04:00.0: screen_info_fixup_lfb+0x0/0x1e0 took 0 usecs
+[    0.317911] pci 0000:04:00.0: calling  pci_fixup_video+0x0/0x120 @ 1
+[    0.317931] pci 0000:04:00.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.317938] pci 0000:04:00.0: pci_fixup_video+0x0/0x120 took 0 usecs
+[    0.318021] pci 0000:04:00.0: PME# supported from D1 D2 D3hot D3cold
+[    0.318262] pci 0000:04:00.1: [1002:15de] type 00 class 0x040300 PCIe Legacy Endpoint
+[    0.318314] pci 0000:04:00.1: BAR 0 [mem 0xf06c8000-0xf06cbfff]
+[    0.318332] pci 0000:04:00.1: enabling Extended Tags
+[    0.318396] pci 0000:04:00.1: PME# supported from D1 D2 D3hot D3cold
+[    0.318504] pci 0000:04:00.2: [1022:15df] type 00 class 0x108000 PCIe Endpoint
+[    0.318559] pci 0000:04:00.2: BAR 2 [mem 0xf0500000-0xf05fffff]
+[    0.318567] pci 0000:04:00.2: BAR 5 [mem 0xf06ce000-0xf06cffff]
+[    0.318580] pci 0000:04:00.2: enabling Extended Tags
+[    0.318763] pci 0000:04:00.3: [1022:15e0] type 00 class 0x0c0330 PCIe Endpoint
+[    0.318815] pci 0000:04:00.3: BAR 0 [mem 0xf0200000-0xf02fffff 64bit]
+[    0.318833] pci 0000:04:00.3: enabling Extended Tags
+[    0.318901] pci 0000:04:00.3: PME# supported from D0 D3hot D3cold
+[    0.319050] pci 0000:04:00.4: [1022:15e1] type 00 class 0x0c0330 PCIe Endpoint
+[    0.319102] pci 0000:04:00.4: BAR 0 [mem 0xf0300000-0xf03fffff 64bit]
+[    0.319120] pci 0000:04:00.4: enabling Extended Tags
+[    0.319187] pci 0000:04:00.4: PME# supported from D0 D3hot D3cold
+[    0.319336] pci 0000:04:00.5: [1022:15e2] type 00 class 0x048000 PCIe Endpoint
+[    0.319387] pci 0000:04:00.5: BAR 0 [mem 0xf0680000-0xf06bffff]
+[    0.319406] pci 0000:04:00.5: enabling Extended Tags
+[    0.319473] pci 0000:04:00.5: PME# supported from D0 D3hot D3cold
+[    0.319610] pci 0000:04:00.6: [1022:15e3] type 00 class 0x040300 PCIe Endpoint
+[    0.319661] pci 0000:04:00.6: BAR 0 [mem 0xf06c0000-0xf06c7fff]
+[    0.319680] pci 0000:04:00.6: enabling Extended Tags
+[    0.319743] pci 0000:04:00.6: PME# supported from D0 D3hot D3cold
+[    0.319876] pci 0000:04:00.7: [1022:15e6] type 00 class 0x000000 PCIe Endpoint
+[    0.319930] pci 0000:04:00.7: BAR 2 [mem 0xf0400000-0xf04fffff]
+[    0.319938] pci 0000:04:00.7: BAR 5 [mem 0xf06cc000-0xf06cdfff]
+[    0.319951] pci 0000:04:00.7: enabling Extended Tags
+[    0.320192] pci 0000:00:08.1: PCI bridge to [bus 04]
+[    0.322140] ACPI: PCI: Interrupt link LNKA configured for IRQ 0
+[    0.322148] ACPI: PCI: Interrupt link LNKA disabled
+[    0.322313] ACPI: PCI: Interrupt link LNKB configured for IRQ 0
+[    0.322319] ACPI: PCI: Interrupt link LNKB disabled
+[    0.322455] ACPI: PCI: Interrupt link LNKC configured for IRQ 0
+[    0.322461] ACPI: PCI: Interrupt link LNKC disabled
+[    0.322622] ACPI: PCI: Interrupt link LNKD configured for IRQ 0
+[    0.322628] ACPI: PCI: Interrupt link LNKD disabled
+[    0.322777] ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+[    0.322783] ACPI: PCI: Interrupt link LNKE disabled
+[    0.322904] ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+[    0.322910] ACPI: PCI: Interrupt link LNKF disabled
+[    0.323033] ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+[    0.323039] ACPI: PCI: Interrupt link LNKG disabled
+[    0.323161] ACPI: PCI: Interrupt link LNKH configured for IRQ 0
+[    0.323167] ACPI: PCI: Interrupt link LNKH disabled
+[    0.323865] ACPI: \_SB_.PCI0.LPCB.EC0_: Boot DSDT EC initialization complete
+[    0.323870] ACPI: \_SB_.PCI0.LPCB.EC0_: EC: Used to handle transactions and events
+[    0.328486] calling  pci_subsys_init+0x0/0xa0 @ 1
+[    0.328487] PCI: Using ACPI for IRQ routing
+[    0.330846] PCI: pci_cache_line_size set to 64 bytes
+[    0.331040] initcall pci_subsys_init+0x0/0xa0 returned 0 after 3000 usecs
+[    0.331446] pci 0000:04:00.0: vgaarb: setting as boot VGA device
+[    0.331451] pci 0000:04:00.0: vgaarb: bridge control possible
+[    0.331455] pci 0000:04:00.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.331474] calling  pci_eisa_init_early+0x0/0x140 @ 1
+[    0.331474] initcall pci_eisa_init_early+0x0/0x140 returned 0 after 0 usecs
+[    0.365413] calling  pcibios_assign_resources+0x0/0xe0 @ 1
+[    0.365446] pci 0000:00:01.4: bridge window [io  0x1000-0x0fff] to [bus 02] add_size 1000
+[    0.365454] pci 0000:00:01.4: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 02] add_size 200000 add_align 100000
+[    0.365477] pci 0000:00:01.4: bridge window [mem 0xf0a00000-0xf0bfffff 64bit pref]: assigned
+[    0.365493] pci 0000:00:01.4: bridge window [io  0x1000-0x1fff]: assigned
+[    0.365502] pci 0000:00:01.3: PCI bridge to [bus 01]
+[    0.365509] pci 0000:00:01.3:   bridge window [io  0x3000-0x3fff]
+[    0.365518] pci 0000:00:01.3:   bridge window [mem 0xf0900000-0xf09fffff]
+[    0.365531] pci 0000:02:00.0: BAR 0 [mem 0xf0800000-0xf0803fff 64bit]: assigned
+[    0.365586] pci 0000:00:01.4: PCI bridge to [bus 02]
+[    0.365591] pci 0000:00:01.4:   bridge window [io  0x1000-0x1fff]
+[    0.365598] pci 0000:00:01.4:   bridge window [mem 0xf0800000-0xf08fffff]
+[    0.365604] pci 0000:00:01.4:   bridge window [mem 0xf0a00000-0xf0bfffff 64bit pref]
+[    0.365615] pci 0000:00:01.7: PCI bridge to [bus 03]
+[    0.365622] pci 0000:00:01.7:   bridge window [mem 0xf0700000-0xf07fffff]
+[    0.365638] pci 0000:00:08.1: PCI bridge to [bus 04]
+[    0.365647] pci 0000:00:08.1:   bridge window [io  0x2000-0x2fff]
+[    0.365654] pci 0000:00:08.1:   bridge window [mem 0xf0200000-0xf06fffff]
+[    0.365660] pci 0000:00:08.1:   bridge window [mem 0xe0000000-0xf01fffff 64bit pref]
+[    0.365673] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.365678] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.365682] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.365687] pci_bus 0000:00: resource 7 [mem 0x000c0000-0x000cbfff window]
+[    0.365691] pci_bus 0000:00: resource 8 [mem 0x000d0000-0x000effff window]
+[    0.365695] pci_bus 0000:00: resource 9 [mem 0xe0000000-0xf7ffffff window]
+[    0.365699] pci_bus 0000:00: resource 10 [mem 0xfc000000-0xfeafffff window]
+[    0.365704] pci_bus 0000:01: resource 0 [io  0x3000-0x3fff]
+[    0.365708] pci_bus 0000:01: resource 1 [mem 0xf0900000-0xf09fffff]
+[    0.365712] pci_bus 0000:02: resource 0 [io  0x1000-0x1fff]
+[    0.365716] pci_bus 0000:02: resource 1 [mem 0xf0800000-0xf08fffff]
+[    0.365720] pci_bus 0000:02: resource 2 [mem 0xf0a00000-0xf0bfffff 64bit pref]
+[    0.365725] pci_bus 0000:03: resource 1 [mem 0xf0700000-0xf07fffff]
+[    0.365730] pci_bus 0000:04: resource 0 [io  0x2000-0x2fff]
+[    0.365734] pci_bus 0000:04: resource 1 [mem 0xf0200000-0xf06fffff]
+[    0.365737] pci_bus 0000:04: resource 2 [mem 0xe0000000-0xf01fffff 64bit pref]
+[    0.365845] initcall pcibios_assign_resources+0x0/0xe0 returned 0 after 428 usecs
+[    0.365850] calling  pci_apply_final_quirks+0x0/0x160 @ 1
+[    0.365932] pci 0000:01:00.4: calling  quirk_usb_early_handoff+0x0/0x190 @ 1
+[    0.366340] pci 0000:01:00.4: quirk_usb_early_handoff+0x0/0x190 took 387 usecs
+[    0.366398] pci 0000:04:00.0: calling  quirk_amd_harvest_no_ats+0x0/0x80 @ 1
+[    0.366409] pci 0000:04:00.0: quirk_amd_harvest_no_ats+0x0/0x80 took 0 usecs
+[    0.366424] pci 0000:04:00.1: calling  quirk_gpu_hda+0x0/0x20 @ 1
+[    0.366495] pci 0000:04:00.1: D0 power state depends on 0000:04:00.0
+[    0.366508] pci 0000:04:00.1: quirk_gpu_hda+0x0/0x20 took 77 usecs
+[    0.366524] pci 0000:04:00.3: calling  quirk_ryzen_xhci_d3hot+0x0/0x50 @ 1
+[    0.366530] pci 0000:04:00.3: extending delay after power-on from D3hot to 20 msec
+[    0.366534] pci 0000:04:00.3: quirk_ryzen_xhci_d3hot+0x0/0x50 took 5 usecs
+[    0.366541] pci 0000:04:00.3: calling  quirk_usb_early_handoff+0x0/0x190 @ 1
+[    0.366973] pci 0000:04:00.3: quirk_usb_early_handoff+0x0/0x190 took 415 usecs
+[    0.366985] pci 0000:04:00.4: calling  quirk_ryzen_xhci_d3hot+0x0/0x50 @ 1
+[    0.366991] pci 0000:04:00.4: extending delay after power-on from D3hot to 20 msec
+[    0.366996] pci 0000:04:00.4: quirk_ryzen_xhci_d3hot+0x0/0x50 took 4 usecs
+[    0.367002] pci 0000:04:00.4: calling  quirk_usb_early_handoff+0x0/0x190 @ 1
+[    0.367278] pci 0000:04:00.4: quirk_usb_early_handoff+0x0/0x190 took 263 usecs
+[    0.367293] pci 0000:04:00.6: calling  quirk_gpu_hda+0x0/0x20 @ 1
+[    0.367298] pci 0000:04:00.6: quirk_gpu_hda+0x0/0x20 took 0 usecs
+[    0.367307] PCI: CLS 0 bytes, default 64
+[    0.367311] initcall pci_apply_final_quirks+0x0/0x160 returned 0 after 1454 usecs
+[    0.367371] calling  pci_iommu_init+0x0/0x70 @ 1
+[    0.367393] pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
+[    0.367516] pci 0000:00:01.0: Adding to iommu group 0
+[    0.367536] pci 0000:00:01.3: Adding to iommu group 1
+[    0.367555] pci 0000:00:01.4: Adding to iommu group 2
+[    0.367579] pci 0000:00:01.7: Adding to iommu group 3
+[    0.367603] pci 0000:00:08.0: Adding to iommu group 4
+[    0.367622] pci 0000:00:08.1: Adding to iommu group 5
+[    0.367650] pci 0000:00:14.0: Adding to iommu group 6
+[    0.367669] pci 0000:00:14.3: Adding to iommu group 6
+[    0.367737] pci 0000:00:18.0: Adding to iommu group 7
+[    0.367754] pci 0000:00:18.1: Adding to iommu group 7
+[    0.367771] pci 0000:00:18.2: Adding to iommu group 7
+[    0.367787] pci 0000:00:18.3: Adding to iommu group 7
+[    0.367802] pci 0000:00:18.4: Adding to iommu group 7
+[    0.367820] pci 0000:00:18.5: Adding to iommu group 7
+[    0.367838] pci 0000:00:18.6: Adding to iommu group 7
+[    0.367855] pci 0000:00:18.7: Adding to iommu group 7
+[    0.367903] pci 0000:01:00.0: Adding to iommu group 8
+[    0.367924] pci 0000:01:00.1: Adding to iommu group 8
+[    0.367945] pci 0000:01:00.2: Adding to iommu group 8
+[    0.367967] pci 0000:01:00.3: Adding to iommu group 8
+[    0.367988] pci 0000:01:00.4: Adding to iommu group 8
+[    0.368010] pci 0000:02:00.0: Adding to iommu group 9
+[    0.368030] pci 0000:03:00.0: Adding to iommu group 10
+[    0.368059] pci 0000:04:00.0: Adding to iommu group 11
+[    0.368117] pci 0000:04:00.1: Adding to iommu group 12
+[    0.368140] pci 0000:04:00.2: Adding to iommu group 12
+[    0.368163] pci 0000:04:00.3: Adding to iommu group 12
+[    0.368186] pci 0000:04:00.4: Adding to iommu group 12
+[    0.368211] pci 0000:04:00.5: Adding to iommu group 12
+[    0.368234] pci 0000:04:00.6: Adding to iommu group 12
+[    0.368258] pci 0000:04:00.7: Adding to iommu group 12
+[    0.370605] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.370618] initcall pci_iommu_init+0x0/0x70 returned 0 after 3241 usecs
+[    0.391601] calling  pwm_lpss_driver_pci_init+0x0/0x30 @ 1
+[    0.391635] initcall pwm_lpss_driver_pci_init+0x0/0x30 returned 0 after 31 usecs
+[    0.391656] calling  pcie_portdrv_init+0x0/0x80 @ 1
+[    0.391854] pcieport 0000:00:01.3: PME: Signaling with IRQ 26
+[    0.391872] probe of 0000:00:01.3:pcie001 returned 0 after 51 usecs
+[    0.391943] pcieport 0000:00:01.3: AER: enabled with IRQ 26
+[    0.391950] probe of 0000:00:01.3:pcie002 returned 0 after 63 usecs
+[    0.392162] pcieport 0000:00:01.4: PME: Signaling with IRQ 27
+[    0.392172] probe of 0000:00:01.4:pcie001 returned 0 after 35 usecs
+[    0.392240] pcieport 0000:00:01.4: AER: enabled with IRQ 27
+[    0.392246] probe of 0000:00:01.4:pcie002 returned 0 after 60 usecs
+[    0.392273] pcieport 0000:00:01.4: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise- Interlock- NoCompl+ IbPresDis- LLActRep+
+[    0.392376] probe of 0000:00:01.4:pcie004 returned 0 after 113 usecs
+[    0.392584] pcieport 0000:00:01.7: PME: Signaling with IRQ 28
+[    0.392594] probe of 0000:00:01.7:pcie001 returned 0 after 35 usecs
+[    0.392649] pcieport 0000:00:01.7: AER: enabled with IRQ 28
+[    0.392661] probe of 0000:00:01.7:pcie002 returned 0 after 52 usecs
+[    0.392857] pcieport 0000:00:08.1: PME: Signaling with IRQ 29
+[    0.392890] probe of 0000:00:08.1:pcie001 returned 0 after 56 usecs
+[    0.392974] initcall pcie_portdrv_init+0x0/0x80 returned 0 after 1315 usecs
+[    0.392981] calling  pci_proc_init+0x0/0x90 @ 1
+[    0.393026] initcall pci_proc_init+0x0/0x90 returned 0 after 42 usecs
+[    0.393030] calling  pci_hotplug_init+0x0/0x70 @ 1
+[    0.393033] initcall pci_hotplug_init+0x0/0x70 returned 0 after 0 usecs
+[    0.393049] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.393056] calling  pci_ep_cfs_init+0x0/0x100 @ 1
+[    0.393100] initcall pci_ep_cfs_init+0x0/0x100 returned 0 after 40 usecs
+[    0.393103] calling  pci_epc_init+0x0/0x20 @ 1
+[    0.393112] initcall pci_epc_init+0x0/0x20 returned 0 after 6 usecs
+[    0.393115] calling  pci_epf_init+0x0/0x50 @ 1
+[    0.393134] initcall pci_epf_init+0x0/0x50 returned 0 after 15 usecs
+[    0.393137] calling  dw_plat_pcie_driver_init+0x0/0x30 @ 1
+[    0.393158] initcall dw_plat_pcie_driver_init+0x0/0x30 returned 0 after 18 usecs
+[    0.417541] calling  virtio_pci_driver_init+0x0/0x30 @ 1
+[    0.417573] initcall virtio_pci_driver_init+0x0/0x30 returned 0 after 29 usecs
+[    0.421111] calling  mid8250_pci_driver_init+0x0/0x30 @ 1
+[    0.421144] initcall mid8250_pci_driver_init+0x0/0x30 returned 0 after 29 usecs
+[    0.421149] calling  serial_pci_driver_init+0x0/0x30 @ 1
+[    0.464672] initcall serial_pci_driver_init+0x0/0x30 returned 0 after 43519 usecs
+[    0.496377] calling  sis_pci_driver_init+0x0/0x30 @ 1
+[    0.496388] initcall sis_pci_driver_init+0x0/0x30 returned 0 after 8 usecs
+[    0.496391] calling  ata_generic_pci_driver_init+0x0/0x30 @ 1
+[    0.496403] initcall ata_generic_pci_driver_init+0x0/0x30 returned 0 after 9 usecs
+[    0.497189] calling  ehci_pci_init+0x0/0x70 @ 1
+[    0.497213] initcall ehci_pci_init+0x0/0x70 returned 0 after 21 usecs
+[    0.497238] calling  ohci_pci_init+0x0/0x70 @ 1
+[    0.497252] initcall ohci_pci_init+0x0/0x70 returned 0 after 11 usecs
+[    0.497629] ehci-pci 0000:01:00.4: EHCI Host Controller
+[    0.497645] ehci-pci 0000:01:00.4: new USB bus registered, assigned bus number 1
+[    0.497781] ehci-pci 0000:01:00.4: irq 33, io mem 0xf0918000
+[    0.505387] ehci-pci 0000:01:00.4: USB 0.0 started, EHCI 1.00
+[    0.518692] calling  intel_scu_pci_driver_init+0x0/0x30 @ 1
+[    0.518733] initcall intel_scu_pci_driver_init+0x0/0x30 returned 0 after 37 usecs
+[    0.689025] calling  pci_resource_alignment_sysfs_init+0x0/0x30 @ 1
+[    0.689051] initcall pci_resource_alignment_sysfs_init+0x0/0x30 returned 0 after 22 usecs
+[    0.689053] calling  pci_sysfs_init+0x0/0xa0 @ 1
+[    0.689211] initcall pci_sysfs_init+0x0/0xa0 returned 0 after 155 usecs
+[    0.734411] calling  pci_mmcfg_late_insert_resources+0x0/0xd0 @ 1
+[    0.734419] initcall pci_mmcfg_late_insert_resources+0x0/0xd0 returned 0 after 3 usecs
+[    1.026606] calling  xhci_pci_init+0x0/0xff0 [xhci_pci] @ 153
+[    1.033346] calling  rtl8169_pci_driver_init+0x0/0xff0 [r8169] @ 154
+[    1.073773] nvme nvme0: pci function 0000:03:00.0
+[    1.092257] initcall rtl8169_pci_driver_init+0x0/0xff0 [r8169] returned 0 after 12596 usecs
+[    1.195934] initcall xhci_pci_init+0x0/0xff0 [xhci_pci] returned 0 after 79325 usecs
+[    4.354538] calling  amd_mp2_pci_driver_init+0x0/0xff0 [i2c_amd_mp2_pci] @ 568
+[    4.366657] initcall amd_mp2_pci_driver_init+0x0/0xff0 [i2c_amd_mp2_pci] returned 0 after 7302 usecs
+[    4.372684] calling  acp3x_driver_init+0x0/0xff0 [snd_pci_acp3x] @ 584
+[    4.373573] ACPI Warning: SystemIO range 0x0000000000000B00-0x0000000000000B08 conflicts with OpRegion 0x0000000000000B00-0x0000000000000B06 (\_SB.PCI0.SMBS.SMBO) (20240322/utaddress-204)
+[    4.379234] snd_pci_acp3x 0000:04:00.5: ACP audio mode : 1
+[    4.380158] initcall acp3x_driver_init+0x0/0xff0 [snd_pci_acp3x] returned 0 after 2626 usecs
+[    4.419280] calling  rn_acp_driver_init+0x0/0xff0 [snd_rn_pci_acp3x] @ 584
+[    4.419398] initcall rn_acp_driver_init+0x0/0xff0 [snd_rn_pci_acp3x] returned 0 after 93 usecs
+[    4.483527] calling  acp5x_driver_init+0x0/0xff0 [snd_pci_acp5x] @ 584
+[    4.483579] initcall acp5x_driver_init+0x0/0xff0 [snd_pci_acp5x] returned 0 after 45 usecs
+[    4.660997] iwlwifi 0000:02:00.0: PCI dev 2526/0014, rev=0x321, rfid=0x105110
+[    4.771868] calling  yc_acp6x_driver_init+0x0/0xff0 [snd_pci_acp6x] @ 584
+[    4.771987] initcall yc_acp6x_driver_init+0x0/0xff0 [snd_pci_acp6x] returned 0 after 103 usecs
+[    4.880360] calling  snd_amd_acp_pci_driver_init+0x0/0xff0 [snd_acp_pci] @ 584
+[    4.880471] initcall snd_amd_acp_pci_driver_init+0x0/0xff0 [snd_acp_pci] returned 0 after 92 usecs
+[    4.895928] calling  rpl_acp6x_driver_init+0x0/0xff0 [snd_rpl_pci_acp6x] @ 584
+[    4.896039] initcall rpl_acp6x_driver_init+0x0/0xff0 [snd_rpl_pci_acp6x] returned 0 after 83 usecs
+[    4.998043] calling  ps_acp63_driver_init+0x0/0xff0 [snd_pci_ps] @ 584
+[    4.999181] initcall ps_acp63_driver_init+0x0/0xff0 [snd_pci_ps] returned 0 after 1122 usecs
+[    5.006070] input: HD-Audio Generic HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:08.1/0000:04:00.1/sound/card0/input19
+[    5.038275] calling  snd_sof_pci_amd_rn_driver_init+0x0/0xff0 [snd_sof_amd_renoir] @ 584
+[    5.038393] initcall snd_sof_pci_amd_rn_driver_init+0x0/0xff0 [snd_sof_amd_renoir] returned 0 after 97 usecs
+[    5.041703] calling  snd_sof_pci_amd_rmb_driver_init+0x0/0xff0 [snd_sof_amd_rembrandt] @ 584
+[    5.041782] initcall snd_sof_pci_amd_rmb_driver_init+0x0/0xff0 [snd_sof_amd_rembrandt] returned 0 after 63 usecs
+[    5.045133] calling  snd_sof_pci_amd_vgh_driver_init+0x0/0xff0 [snd_sof_amd_vangogh] @ 584
+[    5.045222] initcall snd_sof_pci_amd_vgh_driver_init+0x0/0xff0 [snd_sof_amd_vangogh] returned 0 after 76 usecs
+[    5.048693] calling  snd_sof_pci_amd_acp63_driver_init+0x0/0xff0 [snd_sof_amd_acp63] @ 584
+[    5.048764] initcall snd_sof_pci_amd_acp63_driver_init+0x0/0xff0 [snd_sof_amd_acp63] returned 0 after 60 usecs
+[    5.053293] input: HD-Audio Generic HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:08.1/0000:04:00.1/sound/card0/input20
+[    5.053364] input: HD-Audio Generic HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:08.1/0000:04:00.1/sound/card0/input21
+[    5.053418] input: HD-Audio Generic HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:08.1/0000:04:00.1/sound/card0/input22
+[   10.021599] input: HD-Audio Generic Mic as /devices/pci0000:00/0000:00:08.1/0000:04:00.6/sound/card1/input26
+[   10.021687] input: HD-Audio Generic Headphone as /devices/pci0000:00/0000:00:08.1/0000:04:00.6/sound/card1/input27
+[   10.084587] resource: resource sanity check: requesting [mem 0x00000000000c0000-0x00000000000dffff], which spans more than PCI Bus 0000:00 [mem 0x000c0000-0x000cbfff window]
+[   10.084594] caller pci_map_rom+0x6c/0x1d0 mapping multiple BARs
+[   10.084614] amdgpu 0000:04:00.0: Invalid PCI ROM header signature: expecting 0xaa55, got 0xffff
+
